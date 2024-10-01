@@ -1,5 +1,5 @@
-import ThreeScene from '@/components/ThreeScene';
+import { ThreeScene } from "@/components/ThreeScene";
 
 export default () => {
-  return <ThreeScene />
-}
+	return <ThreeScene />;
+};
