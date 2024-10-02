@@ -141,9 +141,11 @@ const PivotWrapper = ({ children }) => {
 			visible={selected}
 		>
 			<mesh
-				onPointerUp={(e) => {
-					e.stopPropagation();
-					setSelected(true);
+				onPointerDown={(e) => {
+					if (!selected) {
+						e.stopPropagation();
+						setSelected(true);
+					}
 				}}
 				onPointerMissed={() => setSelected(false)}
 			>
