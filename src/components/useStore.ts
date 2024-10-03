@@ -11,4 +11,6 @@ export const useStore = create((set) => ({
 	setSvgData: (data) => set({ svgData: data }),
 	glbData: null, // Add glbData state
 	setGlbData: (data) => set({ glbData: data }),
+	imageData: null,
+	setImageData: (data) => set({ imageData: data }),
 }));
